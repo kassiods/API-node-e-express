@@ -2,7 +2,6 @@
   "name": "api-node-e-express",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "build": "npx prisma generate",
