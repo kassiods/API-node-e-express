@@ -9,7 +9,7 @@ router.get('/listar-usuarios', async (req, res) => {
         const users = await prisma.user.findMany(); // Obtém todos os usuários
         res.status(200).json({
             message: "Usuários listados com sucesso!",
-            users, // Retorna como `users` no plural
+            users, 
         });
     } catch (err) {
         console.error(err);
