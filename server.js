@@ -12,8 +12,9 @@ app.use(cors())
 app.use('/', publicRoutes)
 app.use('/', auth, privateRoutes)
 
+const PORT = process.env.PORT || 3000
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log("Servidor ta ONLINE!")
 })
 
